@@ -21,6 +21,10 @@ body {
   padding-top: 100px;
 }
 
+.container {
+  overflow-x: hidden;
+}
+
 h1{
   font-size: 48px;
   margin: 50px auto 0px auto;
@@ -322,6 +326,99 @@ a:hover{
 .oppenned li {
   margin-right: 168px;
 }
+
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+
+  .open {
+    /* adjust position */
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .open span {
+    /* adjust size and position */
+    height: 4px;
+    width: 30px;
+    border-radius: 30px;
+    right: 2px;
+    top: 2px;
+  }
+
+  .open span:nth-child(1) {
+    /* adjust margin */
+    margin-top: 8px;
+  }
+
+  .open span:nth-child(2) {
+    /* adjust margin */
+    margin-top: 18px;
+  }
+
+  .open span:nth-child(3) {
+    /* adjust margin */
+    margin-top: 28px;
+  }
+
+  .sub-menu {
+    /* adjust size and position */
+    height: auto;
+    width: 200px;
+    right: -20px;
+    top: 50px;
+    border-radius: 20px;
+  }
+
+  .sub-menu li {
+    /* adjust margin */
+    margin-right: 0;
+  }
+
+  .sub-menu li:first-child {
+    /* adjust margin */
+    margin-top: 10px;
+  }
+
+  .oppenned .sub-menu {
+    /* adjust size */
+    height: auto;
+    width: 240px;
+  }
+
+  .oppenned span:nth-child(2) {
+    /* adjust size and position */
+    height: 240px;
+    width: 240px;
+    right: -20px;
+    top: -20px;
+    border-radius: 20px;
+  }
+
+  .oppenned li {
+    /* adjust margin */
+    margin-right: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
